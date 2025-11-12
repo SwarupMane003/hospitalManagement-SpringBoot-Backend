@@ -12,8 +12,8 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class InsuranceService {
-    private InsuranceRepository insuranceRepository;
-    private PatientRepository patientRepository;
+    private final InsuranceRepository insuranceRepository;
+    private final PatientRepository patientRepository;
 
 
     //this will create insuarnace if it is not in db
