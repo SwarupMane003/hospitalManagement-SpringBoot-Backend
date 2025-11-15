@@ -30,6 +30,17 @@ public class InsuranceService {
         return patient;
     }
 
+    public Patient diassociateInsuranceFromPatient(Long patientId)
+    {
+        Patient patient = patientRepository.
+                findById(patientId).
+                orElseThrow(() -> new EntityNotFoundException("Patient Not Found with this id " + patientId));
+
+        patient.setInsurance(null);
+
+        return patient;
+    }
+
 
 }
 
