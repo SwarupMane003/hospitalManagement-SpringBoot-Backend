@@ -51,6 +51,6 @@ public class InsuranceTests {
         System.out.println(updatedAppointment);
     }
 
-
+    
 
 }
