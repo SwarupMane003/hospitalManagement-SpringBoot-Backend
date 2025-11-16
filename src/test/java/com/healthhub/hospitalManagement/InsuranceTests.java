@@ -25,7 +25,7 @@ public class InsuranceTests {
     @Test
     void test1()
     {
-        Insurance insurance = Insurance.builder().policyNumber("HDFC_1234")
+        Insurance insurance = Insurance.builder().policyNumber("HDFC_12345")
                 .provider("HDFC").validUntil(LocalDate.of(2030,12,12)).build();
 
 

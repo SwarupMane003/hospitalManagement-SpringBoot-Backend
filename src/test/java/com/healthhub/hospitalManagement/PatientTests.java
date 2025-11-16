@@ -27,6 +27,13 @@ public class PatientTests {
     private PatientService patientService;
 
     @Test
+    public void testPatienRepo()
+    {
+        List<Patient>myList = patientRepository.findAllPatientWithAppointment();
+        System.out.println(myList);
+    }
+
+    @Test
     public void testTransactionMethods()
     {
         Patient patient = patientService.getPatientById(1L);
